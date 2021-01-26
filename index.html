@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>About Me</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-name">ADITYA  ANAND</h1>
+        <div>
+            <ul>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="MyHobbies.html">My Hobbies</a></li>
+                <li><a href="index.html">About Me</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+       <div class="images">
+        <img class="fade" src="aditya1.jpg" alt="Image not availaible">
+        <img class="fade" src="aditya2.jpeg" alt="Image not availaible">
+        <img class="fade" src="aditya3.jpeg" alt="Image not availaible">
+       </div>
+        <div class="main-head">
+            <span class="main-start"> I'm</span> <span class="main-name"> Aditya</span><br>
+            <span class="last-name">Anand</span>
+        </div>
+        <p>Currently pursuing my B.tech from NSUT. I am always passionate about exploring and learning new things.  I try to be myself, be passionate about my dreams and hobbies, live honestly, and work hard to achieve all that I want. If you like me so far and want to know more about me be sure to check <b><a href="MyHobbies.html">My Hobbies</a></b> and <b><a href="skills.html">Skills</a></b>.</p>
+    </main>
+    <br>
+    <script>
+
+    var indexValue = 0;
+    function slideShow(){
+      setTimeout(slideShow, 2500);
+      var x;
+      const img = document.querySelectorAll("img");
+      for(x = 0; x < img.length; x++){
+        img[x].style.display = "none";
+      }
+      indexValue++;
+      if(indexValue > img.length){indexValue = 1}
+      img[indexValue -1].style.display = "block";
+    }
+    slideShow();
+  </script>
+
+ </body>
+
+</html>
+</html>
